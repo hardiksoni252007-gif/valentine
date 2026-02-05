@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <link rel="icon" href="rose.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    background: url("love.jpg");
+    background-size: cover;
+}
+/* .pannel i{
+    font-size: 20px;
+}
+.pannel{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.theme{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(345deg,
+    rgba(255, 0, 55, 1) 0%,
+    rgba(255, 75, 0, 0.9) 35%,
+    rgba(255, 135, 75, 0.9) 70%,
+    rgba(105, 0, 75, 1) 100%
+    );
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    transition: 0.1s ease;
+}
+.theme:active{
+    transform: scale(0.9);
+} */
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    height: 350px;
+    border: 2px solid black;
+    background: linear-gradient(270deg, 
+    #ff9a9e, 
+    #fad0c4, 
+    #fad0c4, 
+    #fbc2eb, 
+    #a6c1ee
+    );
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    height: 350px;
+    border: 2px solid black;
+    background: linear-gradient(270deg, 
+    #ff9a9e, 
+    #fad0c4, 
+    #fad0c4, 
+    #fbc2eb, 
+    #a6c1ee
+    );
+    border-radius: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, 
+    #ff9a9e, 
+    #fad0c4, 
+    #fad0c4, 
+    #fbc2eb, 
+    #a6c1ee
+    );
+  filter: blur(100px);   /* controls blur strength */
+  z-index: -1;          /* keeps it behind content */
+}
+.content{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container h1{
+    color: rgb(234, 47, 109);
+}
+.login{
+    width: 30%;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s ease;
+}
+.login .button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    color: black;
+}
+.login:active{
+    transform: scale(0.9);
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    /* background: linear-gradient(135deg, 
+    #ff9a9e, 
+    #fad0c4, 
+    #a1c4fd, 
+    #c2e9fb, 
+    #fbc2eb, 
+    #fda085
+    ); */
+    background: rgba(255, 255, 255, 0.); /* translucent white */
+    backdrop-filter: blur(30px);           /* frosted blur effect */
+    -webkit-backdrop-filter: blur(5px);   /* Safari support */
+    border-radius: 12px;                   /* smooth corners */
+    border: 2px solid var(--accent); /* subtle border */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+}
+    </style>
+
+    <!-- theme change button -->
+     <!-- <div class="pannel">
+        <button class="theme" id="theme"><i class="fa-solid fa-ghost"></i></button>
+     </div> -->
+    
+    <!-- login box -->
+    <div class="container" id="contain">
+        <div class="title">
+            <h1 id="msg">Will you be my valentine?</h1>
+        </div>
+        <div class="content">
+            <div class="login" id="login">
+                <button class="button">Absolutly</button>
+            </div>
+            <div class="login" id="run">
+                <button class="button" >Never</button>
+            </div>
+        </div>
+    </div>
+    <div class="container1" id="container1">
+       <h1>I Love You !!</h1>
+    </div>
+
+    <!-- footer/details -->
+    <div class="bottom">
+        <p>A Valentine Day Webpage Created By Hardik Soni</p>
+        <p>Created On : 05-Feb-2026</p>
+    </div>
+
+    <script>
+        const button = document.getElementById("run");
+        const button1 = document.getElementById("login");
+        let container1 = document.getElementById("container1");
+        
+        button1.addEventListener('click',()=>{
+            container1.style.display="flex";
+            console.log("hey")
+        });
+        
+        document.addEventListener("mousemove", (e) => {
+        const rect = button.getBoundingClientRect();
+        const distanceX = e.clientX - (rect.left + rect.width / 2);
+        const distanceY = e.clientY - (rect.top + rect.height / 2);
+        const distance = Math.sqrt(distanceX**2 + distanceY**2);
+
+        // If cursor is too close, move the button
+        if (distance < 100) {
+            const offsetX = (Math.random() - 0.5) * 300;
+            const offsetY = (Math.random() - 0.5) * 300;
+            button.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+        }
+        });
+
+    </script>
+
+</body>
+</html>
